@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name="format-detection" content="telephone=no">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="main/css/style.css?1">
+		<link rel="stylesheet" type="text/css" href="main/css/about.css?1">
+		<link rel="stylesheet" type="text/css" href="main/css/null.css">
+		<title>Title</title>
+	</head>
+	
+	<body id="phone__menu-id-body">
+		
+		<div class="wrapper">
+			<div class="grid__areas">
+				
+				<aside class="sidebar">
+					<div class="sidebar__menu">
+						
+						<div class="sidebar__menu-top">
+							
+							
+							<div class="accordion__menu">
+								<h2 class="sidebar__menu-title">Меню</h2>
+								<nav class="sidebar__list">
+									<ul class="sidebar__menu-ul">
+										<li class="sidebar__menu-li"><a href="index.html" class="sidebar__menu-a icon__dashboard">Главная</a></li>
+										<li class="sidebar__menu-li"><a href="info.html" class="sidebar__menu-a icon__info">Инфо</a></li>
+										<li class="sidebar__menu-li"><a href="portfolio.html" class="sidebar__menu-a icon__portfolio">Портфолио</a></li>
+										<li class="sidebar__menu-li"><a href="about.html" class="sidebar__menu-a icon__order">Заказать</a></li>
+										<li class="sidebar__menu-li"><a href="feedback.html" class="sidebar__menu-a icon__order">Заказать</a></li>
+									</ul>
+								</nav>
+							</div>
+							
+							
+							<div class="accordion__btn">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							
+						</div>
+						
+					</div>
+				</aside>
+				
+				<main class="main">
+					
+					<div class="phone__main">
+						<div class="phone__menu">
+							<nav class="phone__list">
+								<div class="phone__block">
+									<a href="index.html">
+										<div class="phone__icon">
+											<img src="main/img/icon/dashboard.svg" alt="dashboard">
+										</div>
+										<p class="phone__menu-a phone__dashboard">Главная</p>
+									</a>
+								</div>
+								<div class="phone__block">
+									<a href="info.html">
+										<div class="phone__icon">
+											<img src="main/img/icon/info.svg" alt="dashboard">
+										</div>
+										<p class="phone__menu-a phone__dashboard">Инфо</p>
+									</a>
+								</div>
+								<div class="phone__block">
+									<a href="portfolio.html">
+										<div class="phone__icon">
+											<img src="main/img/icon/portfolio.svg" alt="dashboard">
+										</div>
+										<p class="phone__menu-a phone__dashboard">Портфолио</p>
+									</a>
+								</div>
+								<div class="phone__block">
+									<a href="feedback.html">
+										<div class="phone__icon">
+											<img src="main/img/icon/order.svg" alt="dashboard">
+										</div>
+										<p class="phone__menu-a phone__dashboard">Заказать</p>
+									</a>
+								</div>
+							</nav>
+						</div>
+					</div>
+					
+					<header class="header">
+						
+						<div class="header__flex">
+							<h2 class="header__title">My Portfolio</h2>
+							
+							<div class="header__society">
+								
+								<h2 class="profile__name">Korobko Pavel</h2>
+								
+								<div class="header__profile-photo">
+									<img src="main/img/photo/profile.jpeg" alt="logo">
+								</div>
+								
+							</div>
+							
+						</div>
+						
+						<div class="header__bottom">
+							<span class="header__nav"><a href="index.html" class="nav__index">Главная</a><a href="info.html" class="nav__page">Инфо</a></span>
+							
+							<div class="popup__main">
+								<button onclick="popup__open()" class="popup__btn">Заказать</button>
+								
+								<div id="popup-id" class="popup">
+									<div class="popup__card">
+										
+										<div onclick="popup__close()" class="popup__card-close"></div>
+										
+										<div class="popup__content">
+											<form action="send.php" method="post" class="form__popup">
+												<div class="popup__grid">
+													<input type="text" name="user_name" placeholder="Имя" class="popup__login popup__input">
+													<input type="email" name="user_email" placeholder="Email*" class="popup__email popup__input" required="">
+													<input type="text" name="user_name" placeholder="Тема" class="popup__subject popup__input"> 
+													<textarea name="user_text" placeholder="Сообщение*" class="popup__message popup__input" required=""></textarea>
+													<input type="submit" value="Отправить" class="popup__submit popup__input"> 
+												</div>
+											</form>
+										</div>
+										
+									</div>
+								</div>
+								
+								
+							</div>
+							
+						</div>
+						
+					</header>
+					
+					<div class="about__grid">
+						
+						<div class="about__grid-block grid__column-2"></div>
+						
+						<div class="about__grid-block grid__column-2"></div>
+						
+						<div class="about__grid-block grid__column-2"></div>
+						
+						<div class="about__grid-block grid__row-2"></div>
+						
+						<div class="about__grid-block"></div>
+						
+					</div>
+					
+				</main>
+				
+			</div>
+			
+			<footer class="footer"></footer>
+			
+		</div>
+		
+		<script>
+			var acc = document.getElementsByClassName("accordion__btn");
+			var i;
+			for (i = 0; i < acc.length; i++){
+				acc[i].addEventListener("click", function(){
+					this.classList.toggle("active");
+					var accordion__menu = this.previousElementSibling;
+					if (accordion__menu.style.maxWidth){
+						accordion__menu.style.maxWidth = null;
+						}else {
+						accordion__menu.style.maxWidth = accordion__menu.scrollWidth + "px";
+					}
+				});
+			}
+		</script>
+		
+		<script type="text/javascript" src="main/js/script.js"></script>
+		
+	</body>
+</html>

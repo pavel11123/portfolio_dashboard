@@ -1,0 +1,35 @@
+function popup__open(){
+document.getElementById("popup-id").style.opacity="1";
+document.getElementById("popup-id").style.zIndex="1000";
+document.getElementById("phone__menu-id-body").style.overflow="hidden";
+}
+
+function popup__close(){
+document.getElementById("popup-id").style.opacity="0";
+document.getElementById("popup-id").style.zIndex="-1";
+document.getElementById("phone__menu-id-body").style.overflow="visible";
+}
+
+function square(){
+	document.getElementById("Ellipse100").style.transform = "translate3d(-10px, -10px, 10px)";
+}
+
+function qs(){
+	document.getElementById("Ellipse100").style.transform = "translate3d(0px, 0px, 0px)";
+}
+
+function square(){
+	document.getElementById("Ellipse100").style.transform = "translate3d(-10px, -10px, 10px)";
+}
+
+function qs(){
+	document.getElementById("Ellipse100").style.transform = "translate3d(0px, 0px, 0px)";
+}
+
+function square(){
+	document.getElementById("Ellipse100").style.transform = "translate3d(-10px, -10px, 10px)";
+}
+
+function qs(){
+	document.getElementById("Ellipse100").style.transform = "translate3d(0px, 0px, 0px)";
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name="format-detection" content="telephone=no">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="main/css/style.css?2">
+		<link rel="stylesheet" type="text/css" href="main/css/null.css">
+		<title>Title</title>
+	</head>
+	
+	<body id="phone__menu-id-body">
+		
+		<div class="wrapper">
+			<div class="grid__areas">
+				
+				<aside class="sidebar">
+					<div class="sidebar__menu">
+						
+						<div class="sidebar__menu-top">
+							
+							
+							<div class="accordion__menu">
+								<h2 class="sidebar__menu-title">Меню</h2>
+								<nav class="sidebar__list">
+									<ul class="sidebar__menu-ul">
+										<li class="sidebar__menu-li"><a href="index.html" class="sidebar__menu-a icon__dashboard">Главная</a></li>
+										<li class="sidebar__menu-li"><a href="info.html" class="sidebar__menu-a icon__info">Инфо</a></li>
+										<li class="sidebar__menu-li"><a href="portfolio.html" class="sidebar__menu-a icon__portfolio">Портфолио</a></li>
+										<li class="sidebar__menu-li"><a href="feedback.html" class="sidebar__menu-a icon__order">Заказать</a></li>
+									</ul>
+								</nav>
+							</div>
+							
+							
+							<div class="accordion__btn">
+								<svg viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M18.9583 26.25H29.1666M5.83325 8.75H29.1666H5.83325ZM5.83325 17.5H29.1666H5.83325Z" stroke="#ff0099" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+							
+						</div>
+						
+					</div>
+				</aside>
+				
+				<main class="main">
+				
+									<div class="phone__main">
+						<div class="phone__menu">
+							<nav class="phone__list">
+								<div class="phone__block">
+								<a href="index.html">
+									<div class="phobe__icon">
+										<img src="main/img/icon/dashboard.svg" alt="dashboard">
+									</div>
+									<p class="phone__menu-a phone__dashboard">Главная</p>
+								</a>
+								</div>
+								<div class="phone__block">
+								<a href="index.html">
+									<div class="phobe__icon">
+										<img src="main/img/icon/info.svg" alt="dashboard">
+									</div>
+									<p class="phone__menu-a phone__dashboard">Инфо</p>
+								</a>
+								</div>
+								<div class="phone__block">
+								<a href="index.html">
+									<div class="phobe__icon">
+										<img src="main/img/icon/portfolio.svg" alt="dashboard">
+									</div>
+									<p class="phone__menu-a phone__dashboard">Портфолио</p>
+								</a>
+								</div>
+								<div class="phone__block">
+								<a href="index.html">
+									<div class="phobe__icon">
+										<img src="main/img/icon/order.svg" alt="dashboard">
+									</div>
+									<p class="phone__menu-a phone__dashboard">Заказать</p>
+								</a>
+								</div>
+							</nav>
+						</div>
+					</div>
+					
+					<header class="header">
+						
+						<div class="header__flex">
+							<h2 class="header__title">My Portfolio</h2>
+							
+							<div class="header__society">
+								
+								<h2 class="profile__name">Korobko Pavel</h2>
+								
+								<div class="header__profile-photo">
+									<img src="main/img/photo/profile.jpeg" alt="logo">
+								</div>
+								
+							</div>
+							
+						</div>
+						
+						<div class="header__bottom">
+							<h2 class="header__nav"><a href="index.html" class="nav__index">Главная</a></h2>
+							
+							<div class="popup__main">
+								<button onclick="popup__open()" class="popup__btn">Заказать</button>
+								
+								<div id="popup-id" class="popup">
+									<div class="popup__card">
+										
+										<div onclick="popup__close()" class="popup__card-close"></div>
+										
+										<div class="popup__content">
+											<p class="popup__text">M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z</p>
+										</div>
+									</div>
+								</div>
+								
+								
+							</div>
+							
+						</div>
+						
+					</header>
+					
+					<div class="content">
+						<h2 class="content__title">My Project</h2>
+						
+						
+						
+					</div>
+					
+				</main>
+				
+			</div>
+			
+			<footer class="footer"></footer>
+			
+		</div>
+		
+		<script>
+			var acc = document.getElementsByClassName("accordion__btn");
+			var i;
+			for (i = 0; i < acc.length; i++){
+				acc[i].addEventListener("click", function(){
+					this.classList.toggle("active");
+					var accordion__menu = this.previousElementSibling;
+					if (accordion__menu.style.maxWidth){
+						accordion__menu.style.maxWidth = null;
+						}else {
+						accordion__menu.style.maxWidth = accordion__menu.scrollWidth + "px";
+					}
+				});
+			}
+		</script>
+		
+		<script type="text/javascript" src="main/js/script.js"></script>
+		
+	</body>
+</html>

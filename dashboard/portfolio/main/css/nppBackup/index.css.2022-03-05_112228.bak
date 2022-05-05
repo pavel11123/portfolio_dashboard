@@ -1,0 +1,11 @@
+.index__grid{}
+
+.index__grid-block{}
+
+.grid__block-big{}
+
+.block__big-main{}
+
+.big__main-photo{}
+
+.big__main-photo img{}

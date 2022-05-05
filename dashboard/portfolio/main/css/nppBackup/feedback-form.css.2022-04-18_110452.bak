@@ -1,0 +1,18 @@
+.form__main{margin-top: 40px;background: #1a1a3c;padding: 10px;margin-bottom: 40px;}
+
+.form__grid{display: grid;grid-template-columns: repeat(2,minmax(130px,1fr));gap: 15px;padding: 20px 0;justify-content: center;}
+
+.form__input{background: #141432;color: var(--text-second);font-family: Roboto;padding: 15px;border-radius: 6px;}
+
+.feedback__login{}
+
+.feedback__email{}
+
+.feedback__subject{grid-column: span 2;}
+
+.feedback_message{grid-column: span 2;grid-row: span 2;resize: none;}
+
+.feedback__submit{
+  cursor: pointer;
+  grid-column: span 2;
+}

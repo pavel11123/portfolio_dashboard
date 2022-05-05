@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name="format-detection" content="telephone=no">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="main/css/style.css?1">
+		<link rel="stylesheet" type="text/css" href="main/css/portfolio.css?1">
+		<link rel="stylesheet" type="text/css" href="main/css/null.css">
+		<title>Title</title>
+	</head>
+	
+	<body id="phone__menu-id-body">
+		
+		<div class="wrapper">
+			<div class="grid__areas">
+				
+				<aside class="sidebar">
+					<div class="sidebar__menu">
+						
+						<div class="sidebar__menu-top">
+							
+							
+							<div class="accordion__menu">
+								<h2 class="sidebar__menu-title">Меню</h2>
+								<nav class="sidebar__list">
+									<ul class="sidebar__menu-ul">
+										<li class="sidebar__menu-li"><a href="index.html" class="sidebar__menu-a icon__dashboard">Главная</a></li>
+										<li class="sidebar__menu-li"><a href="info.html" class="sidebar__menu-a icon__info">Инфо</a></li>
+										<li class="sidebar__menu-li"><a href="portfolio.html" class="sidebar__menu-a icon__portfolio">Портфолио</a></li>
+										<li class="sidebar__menu-li"><a href="feedback.html" class="sidebar__menu-a icon__order">Заказать</a></li>
+									</ul>
+								</nav>
+							</div>
+							
+							
+							<div class="accordion__btn">							
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							
+						</div>
+						
+					</div>
+				</aside>
+				
+				<main class="main">
+					
+					<div class="phone__main">
+						<div class="phone__menu">
+							<nav class="phone__list">
+								<div class="phone__block">
+									<a href="index.html">
+										<div class="phone__icon">
+											<img src="main/img/icon/dashboard.svg" alt="dashboard">
+										</div>
+										<p class="phone__menu-a phone__dashboard">Главная</p>
+									</a>
+								</div>
+								<div class="phone__block">
+									<a href="info.html">
+										<div class="phone__icon">
+											<img src="main/img/icon/info.svg" alt="dashboard">
+										</div>
+										<p class="phone__menu-a phone__dashboard">Инфо</p>
+									</a>
+								</div>
+								<div class="phone__block">
+									<a href="portfolio.html">
+										<div class="phone__icon">
+											<img src="main/img/icon/portfolio.svg" alt="dashboard">
+										</div>
+										<p class="phone__menu-a phone__dashboard">Портфолио</p>
+									</a>
+								</div>
+								<div class="phone__block">
+									<a href="feedback.html">
+										<div class="phone__icon">
+											<img src="main/img/icon/order.svg" alt="dashboard">
+										</div>
+										<p class="phone__menu-a phone__dashboard">Заказать</p>
+									</a>
+								</div>
+							</nav>
+						</div>
+					</div>
+					
+					<header class="header">
+						
+						<div class="header__flex">
+							<h2 class="header__title">My Portfolio</h2>
+							
+							<div class="header__society">
+								
+								<h2 class="profile__name">Korobko Pavel</h2>
+								
+								<div class="header__profile-photo">
+									<img src="main/img/photo/profile.jpeg" alt="logo">
+								</div>
+								
+							</div>
+							
+						</div>
+						
+						<div class="header__bottom">
+							<span class="header__nav"><a href="index.html" class="nav__index">Главная</a><a href="portfolio.html" class="nav__page">Портфолио</a></span>
+							
+							<div class="popup__main">
+								<button onclick="popup__open()" class="popup__btn">Заказать</button>
+								
+								<div id="popup-id" class="popup">
+									<div class="popup__card">
+										
+										<div onclick="popup__close()" class="popup__card-close"></div>
+										
+										<div class="popup__content">
+											<p class="popup__text">M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z</p>
+										</div>
+									</div>
+								</div>
+								
+								
+							</div>
+							
+						</div>
+						
+					</header>
+					
+					<div class="content">
+						<h2 class="content__title">My Project</h2>
+						
+						<div class="content__grid">
+							
+							<div class="content__card">
+								<div class="content__card-description">
+									
+									<div class="card__description-top">
+										<h2 class="card__description-title">Calmar UI</h2>
+										
+										<div class="accordion__section">
+											
+											<button class="accordion__main"></button>
+											
+											<div class="accordion__text">
+												<ul>
+													<li>Скачать</li>
+													<li onclick="popup__open()">Заказать</li>
+												</ul>
+												
+											</div>
+										</div>
+										
+									</div>
+									
+									<p class="card__description-text">Вёрстка макета<br>Сайт сервиса обратных звонков</p>
+								</div>
+								<div class="card__description-photo">
+									<div class="card__description-img"><img src="main/img/photo/calmar.png" alt="photo"></div>
+									<div class="card__description-img"><img src="main/img/photo/calmar-1.png" alt="photo"></div>
+								</div>
+								<div class="card__description-info">
+									<div class="card__info-block">
+										<div class="card__info-photo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#14c25a"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12.5 8H11v6l4.75 2.85.75-1.23-4-2.37zm4.837-6.19l4.607 3.845-1.28 1.535-4.61-3.843zm-10.674 0l1.282 1.536L3.337 7.19l-1.28-1.536zM12 4c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/></svg></div>
+										<div class="card__info-text">
+											<h3 class="card__info-title">Сроки</h3>
+											<p class="card__info-value">2 рабочих дня</h3>
+										</div>
+									</div>
+									<div class="card__info-block">
+										<div class="card__info-photo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#14c25a"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg></div>
+										<div class="card__info-text">
+											<h3 class="card__info-title">Стоимость</h3>
+											<p class="card__info-value">2 000 рублей</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="content__card">
+								<div class="content__card-description">
+									<div class="card__description-top">
+										<h2 class="card__description-title">Batman UI</h2>
+										
+										<div class="accordion__section">
+											
+											<button class="accordion__main"></button>
+											
+											<div class="accordion__text">
+												<ul>
+													<li>Скачать</li>
+													<li onclick="popup__open()">Заказать</li>
+												</ul>
+												
+											</div>
+										</div>
+										
+									</div>
+									<p class="card__description-text">Вёрстка макета<br>Промо сайт для фильма "Batman"</p>
+								</div>
+								<div class="card__description-photo">
+									<div class="card__description-img"><img src="main/img/photo/batman.png" alt="photo"></div>
+									<div class="card__description-img"><img src="main/img/photo/batman_1.png" alt="photo"></div>
+								</div>
+								<div class="card__description-info">
+									<div class="card__info-block">
+										<div class="card__info-photo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#7047ee"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12.5 8H11v6l4.75 2.85.75-1.23-4-2.37zm4.837-6.19l4.607 3.845-1.28 1.535-4.61-3.843zm-10.674 0l1.282 1.536L3.337 7.19l-1.28-1.536zM12 4c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/></svg></div>
+										<div class="card__info-text">
+											<h3 class="card__info-title">Сроки</h3>
+											<p class="card__info-value">1 рабочий день</h3>
+										</div>
+									</div>
+									<div class="card__info-block">
+										<div class="card__info-photo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#7047ee"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg></div>
+										<div class="card__info-text">
+											<h3 class="card__info-title">Стоимость</h3>
+											<p class="card__info-value">2 000 рублей</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="content__card">
+								<div class="content__card-description">
+									<div class="card__description-top">
+										<h2 class="card__description-title">Mariella UI</h2>
+										
+										<div class="accordion__section">
+											
+											<button class="accordion__main"></button>
+											
+											<div class="accordion__text">
+												<ul>
+													<li>Скачать</li>
+													<li onclick="popup__open()">Заказать</li>
+												</ul>
+												
+											</div>
+										</div>
+										
+									</div>
+									<p class="card__description-text">Landing page магазина постельных принадлежностей</p>
+								</div>
+								<div class="card__description-photo">
+									<div class="card__description-img"><img src="main/img/photo/mariela.png" alt="photo"></div>
+									<div class="card__description-img"><img src="main/img/photo/mariela_1.png" alt="photo"></div>
+								</div>
+								<div class="card__description-info">
+									<div class="card__info-block">
+										<div class="card__info-photo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2d74ff"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12.5 8H11v6l4.75 2.85.75-1.23-4-2.37zm4.837-6.19l4.607 3.845-1.28 1.535-4.61-3.843zm-10.674 0l1.282 1.536L3.337 7.19l-1.28-1.536zM12 4c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/></svg></div>
+										<div class="card__info-text">
+											<h3 class="card__info-title">Сроки</h3>
+											<p class="card__info-value">2 рабочих дня</h3>
+										</div>
+									</div>
+									<div class="card__info-block">
+										<div class="card__info-photo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2d74ff"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg></div>
+										<div class="card__info-text">
+											<h3 class="card__info-title">Стоимость</h3>
+											<p class="card__info-value">2 000 рублей</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="content__card">
+								<div class="content__card-description">
+									<div class="card__description-top">
+										<h2 class="card__description-title">Bitrix UI</h2>
+										
+										<div class="accordion__section">
+											
+											<button class="accordion__main"></button>
+											
+											<div class="accordion__text">
+												<ul>
+													<li>Скачать</li>
+													<li onclick="popup__open()">Заказать</li>
+												</ul>
+												
+											</div>
+										</div>
+										
+									</div>
+									<p class="card__description-text">Вёрстка макета<br>Сайт школы иностранных языков</p>
+								</div>
+								<div class="card__description-photo">
+									<div class="card__description-img"><img src="main/img/photo/learning.png" alt="photo"></div>
+									<div class="card__description-img"><img src="main/img/photo/learning_1.png" alt="photo"></div>
+								</div>
+								<div class="card__description-info">
+									<div class="card__info-block">
+										<div class="card__info-photo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#e73152"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12.5 8H11v6l4.75 2.85.75-1.23-4-2.37zm4.837-6.19l4.607 3.845-1.28 1.535-4.61-3.843zm-10.674 0l1.282 1.536L3.337 7.19l-1.28-1.536zM12 4c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/></svg></div>
+										<div class="card__info-text">
+											<h3 class="card__info-title">Сроки</h3>
+											<p class="card__info-value">4 рабочих дня</h3>
+										</div>
+									</div>
+									<div class="card__info-block">
+										<div class="card__info-photo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#e73152"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg></div>
+										<div class="card__info-text">
+											<h3 class="card__info-title">Стоимость</h3>
+											<p class="card__info-value">5 000 рублей</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="content__card">
+								<div class="content__card-description">
+									<div class="card__description-top">
+										<h2 class="card__description-title">NFT UI</h2>
+										
+										<div class="accordion__section">
+											
+											<button class="accordion__main"></button>
+											
+											<div class="accordion__text">
+												<ul>
+													<li>Скачать</li>
+													<li onclick="popup__open()">Заказать</li>
+												</ul>
+												
+											</div>
+										</div>
+										
+									</div>
+									<p class="card__description-text">Landing page<br>Dashboard Project</p>
+								</div>
+								<div class="card__description-photo">
+									<div class="card__description-img"><img src="main/img/photo/nft.png" alt="photo"></div>
+									<div class="card__description-img"><img src="main/img/photo/nft_1.png" alt="photo"></div>
+								</div>
+								<div class="card__description-info">
+									<div class="card__info-block">
+										<div class="card__info-photo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#00cabe"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12.5 8H11v6l4.75 2.85.75-1.23-4-2.37zm4.837-6.19l4.607 3.845-1.28 1.535-4.61-3.843zm-10.674 0l1.282 1.536L3.337 7.19l-1.28-1.536zM12 4c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/></svg></div>
+										<div class="card__info-text">
+											<h3 class="card__info-title">Сроки</h3>
+											<p class="card__info-value">4 рабочих дня</h3>
+										</div>
+									</div>
+									<div class="card__info-block">
+										<div class="card__info-photo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#00cabe"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg></div>
+										<div class="card__info-text">
+											<h3 class="card__info-title">Стоимость</h3>
+											<p class="card__info-value">5 000 рублей</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="content__card">
+								<div class="content__card-description">
+									<div class="card__description-top">
+										<h2 class="card__description-title">Dashboard UI</h2>
+										
+										<div class="accordion__section">
+											
+											<button class="accordion__main"></button>
+											
+											<div class="accordion__text">
+												<ul>
+													<li>Скачать</li>
+													<li onclick="popup__open()">Заказать</li>
+												</ul>
+												
+											</div>
+										</div>
+										
+									</div>
+									<p class="card__description-text">Information Architecture for<br>Dashboard Project</p>
+								</div>
+								<div class="card__description-photo">
+									<div class="card__description-img"><img src="main/img/photo/shifton.png" alt="photo"></div>
+									<div class="card__description-img"><img src="main/img/photo/shifton_1.png" alt="photo"></div>
+								</div>
+								<div class="card__description-info">
+									<div class="card__info-block">
+										<div class="card__info-photo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff0099"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12.5 8H11v6l4.75 2.85.75-1.23-4-2.37zm4.837-6.19l4.607 3.845-1.28 1.535-4.61-3.843zm-10.674 0l1.282 1.536L3.337 7.19l-1.28-1.536zM12 4c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/></svg></div>
+										<div class="card__info-text">
+											<h3 class="card__info-title">Сроки</h3>
+											<p class="card__info-value">4 рабочих дня</h3>
+										</div>
+									</div>
+									<div class="card__info-block">
+										<div class="card__info-photo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff0099"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg></div>
+										<div class="card__info-text">
+											<h3 class="card__info-title">Стоимость</h3>
+											<p class="card__info-value">5 000 рублей</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="content__card">
+								<div class="content__card-description">
+									<div class="card__description-top">
+										<h2 class="card__description-title">Dashboard UI</h2>
+										
+										<div class="accordion__section">
+											
+											<button class="accordion__main"></button>
+											
+											<div class="accordion__text">
+												<ul>
+													<li>Скачать</li>
+													<li onclick="popup__open()">Заказать</li>
+												</ul>
+												
+											</div>
+										</div>
+										
+									</div>
+									<p class="card__description-text">Information Architecture for<br>Dashboard Project</p>
+								</div>
+								<div class="card__description-photo">
+									<div class="card__description-img"><img src="main/img/photo/space.png" alt="photo"></div>
+									<div class="card__description-img"><img src="main/img/photo/space_1.png" alt="photo"></div>
+								</div>
+								<div class="card__description-info">
+									<div class="card__info-block">
+										<div class="card__info-photo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff0099"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12.5 8H11v6l4.75 2.85.75-1.23-4-2.37zm4.837-6.19l4.607 3.845-1.28 1.535-4.61-3.843zm-10.674 0l1.282 1.536L3.337 7.19l-1.28-1.536zM12 4c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/></svg></div>
+										<div class="card__info-text">
+											<h3 class="card__info-title">Сроки</h3>
+											<p class="card__info-value">4 рабочих дня</h3>
+										</div>
+									</div>
+									<div class="card__info-block">
+										<div class="card__info-photo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff0099"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg></div>
+										<div class="card__info-text">
+											<h3 class="card__info-title">Стоимость</h3>
+											<p class="card__info-value">5 000 рублей</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="content__card">
+								<div class="content__card-description">
+									<div class="card__description-top">
+										<h2 class="card__description-title">Dashboard UI</h2>
+										
+										<div class="accordion__section">
+											
+											<button class="accordion__main"></button>
+											
+											<div class="accordion__text">
+												<ul>
+													<li>Скачать</li>
+													<li onclick="popup__open()">Заказать</li>
+												</ul>
+												
+											</div>
+										</div>
+										
+									</div>
+									<p class="card__description-text">Information Architecture for<br>Dashboard Project</p>
+								</div>
+								<div class="card__description-photo">
+									<div class="card__description-img"><img src="main/img/photo/spoon.png" alt="photo"></div>
+									<div class="card__description-img"><img src="main/img/photo/spoon_1.png" alt="photo"></div>
+								</div>
+								<div class="card__description-info">
+									<div class="card__info-block">
+										<div class="card__info-photo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff0099"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12.5 8H11v6l4.75 2.85.75-1.23-4-2.37zm4.837-6.19l4.607 3.845-1.28 1.535-4.61-3.843zm-10.674 0l1.282 1.536L3.337 7.19l-1.28-1.536zM12 4c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/></svg></div>
+										<div class="card__info-text">
+											<h3 class="card__info-title">Сроки</h3>
+											<p class="card__info-value">4 рабочих дня</h3>
+										</div>
+									</div>
+									<div class="card__info-block">
+										<div class="card__info-photo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff0099"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg></div>
+										<div class="card__info-text">
+											<h3 class="card__info-title">Стоимость</h3>
+											<p class="card__info-value">5 000 рублей</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="content__card">
+								<div class="content__card-description">
+									<div class="card__description-top">
+										<h2 class="card__description-title">Dashboard UI</h2>
+										
+										<div class="accordion__section">
+											
+											<button class="accordion__main"></button>
+											
+											<div class="accordion__text">
+												<ul>
+													<li>Скачать</li>
+													<li onclick="popup__open()">Заказать</li>
+												</ul>
+												
+											</div>
+										</div>
+										
+									</div>
+									<p class="card__description-text">Information Architecture for<br>Dashboard Project</p>
+								</div>
+								<div class="card__description-photo">
+									<div class="card__description-img"><img src="main/img/photo/truck.png" alt="photo"></div>
+									<div class="card__description-img"><img src="main/img/photo/truck_1.png" alt="photo"></div>
+								</div>
+								<div class="card__description-info">
+									<div class="card__info-block">
+										<div class="card__info-photo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff0099"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12.5 8H11v6l4.75 2.85.75-1.23-4-2.37zm4.837-6.19l4.607 3.845-1.28 1.535-4.61-3.843zm-10.674 0l1.282 1.536L3.337 7.19l-1.28-1.536zM12 4c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/></svg></div>
+										<div class="card__info-text">
+											<h3 class="card__info-title">Сроки</h3>
+											<p class="card__info-value">4 рабочих дня</h3>
+										</div>
+									</div>
+									<div class="card__info-block">
+										<div class="card__info-photo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff0099"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg></div>
+										<div class="card__info-text">
+											<h3 class="card__info-title">Стоимость</h3>
+											<p class="card__info-value">5 000 рублей</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="content__card">
+								<div class="content__card-description">
+									<div class="card__description-top">
+										<h2 class="card__description-title">Dashboard UI</h2>
+										
+										<div class="accordion__section">
+											
+											<button class="accordion__main"></button>
+											
+											<div class="accordion__text">
+												<ul>
+													<li>Скачать</li>
+													<li onclick="popup__open()">Заказать</li>
+												</ul>
+												
+											</div>
+										</div>
+										
+									</div>
+									<p class="card__description-text">Information Architecture for<br>Dashboard Project</p>
+								</div>
+								<div class="card__description-photo">
+									<div class="card__description-img"><img src="main/img/photo/widding.png" alt="photo"></div>
+									<div class="card__description-img"><img src="main/img/photo/widding_1.png" alt="photo"></div>
+								</div>
+								<div class="card__description-info">
+									<div class="card__info-block">
+										<div class="card__info-photo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff0099"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12.5 8H11v6l4.75 2.85.75-1.23-4-2.37zm4.837-6.19l4.607 3.845-1.28 1.535-4.61-3.843zm-10.674 0l1.282 1.536L3.337 7.19l-1.28-1.536zM12 4c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/></svg></div>
+										<div class="card__info-text">
+											<h3 class="card__info-title">Сроки</h3>
+											<p class="card__info-value">4 рабочих дня</h3>
+										</div>
+									</div>
+									<div class="card__info-block">
+										<div class="card__info-photo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff0099"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg></div>
+										<div class="card__info-text">
+											<h3 class="card__info-title">Стоимость</h3>
+											<p class="card__info-value">5 000 рублей</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="content__card">
+								<div class="content__card-description">
+									<div class="card__description-top">
+										<h2 class="card__description-title">Dashboard UI</h2>
+										
+										<div class="accordion__section">
+											
+											<button class="accordion__main"></button>
+											
+											<div class="accordion__text">
+												<ul>
+													<li>Скачать</li>
+													<li onclick="popup__open()">Заказать</li>
+												</ul>
+												
+											</div>
+										</div>
+										
+									</div>
+									<p class="card__description-text">Information Architecture for<br>Dashboard Project</p>
+								</div>
+								<div class="card__description-photo">
+									<div class="card__description-img"><img src="main/img/photo/batman.png" alt="photo"></div>
+									<div class="card__description-img"><img src="main/img/photo/batman_1.png" alt="photo"></div>
+								</div>
+								<div class="card__description-info">
+									<div class="card__info-block">
+										<div class="card__info-photo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff0099"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12.5 8H11v6l4.75 2.85.75-1.23-4-2.37zm4.837-6.19l4.607 3.845-1.28 1.535-4.61-3.843zm-10.674 0l1.282 1.536L3.337 7.19l-1.28-1.536zM12 4c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/></svg></div>
+										<div class="card__info-text">
+											<h3 class="card__info-title">Сроки</h3>
+											<p class="card__info-value">4 рабочих дня</h3>
+										</div>
+									</div>
+									<div class="card__info-block">
+										<div class="card__info-photo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff0099"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg></div>
+										<div class="card__info-text">
+											<h3 class="card__info-title">Стоимость</h3>
+											<p class="card__info-value">5 000 рублей</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="content__card">
+								<div class="content__card-description">
+									<div class="card__description-top">
+										<h2 class="card__description-title">Dashboard UI</h2>
+										
+										<div class="accordion__section">
+											
+											<button class="accordion__main"></button>
+											
+											<div class="accordion__text">
+												<ul>
+													<li>Скачать</li>
+													<li onclick="popup__open()">Заказать</li>
+												</ul>
+												
+											</div>
+										</div>
+										
+									</div>
+									<p class="card__description-text">Information Architecture for<br>Dashboard Project</p>
+								</div>
+								<div class="card__description-photo">
+									<div class="card__description-img"><img src="main/img/photo/calmar.png" alt="photo"></div>
+									<div class="card__description-img"><img src="main/img/photo/calmar-1.png" alt="photo"></div>
+								</div>
+								<div class="card__description-info">
+									<div class="card__info-block">
+										<div class="card__info-photo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff0099"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12.5 8H11v6l4.75 2.85.75-1.23-4-2.37zm4.837-6.19l4.607 3.845-1.28 1.535-4.61-3.843zm-10.674 0l1.282 1.536L3.337 7.19l-1.28-1.536zM12 4c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/></svg></div>
+										<div class="card__info-text">
+											<h3 class="card__info-title">Сроки</h3>
+											<p class="card__info-value">4 рабочих дня</h3>
+										</div>
+									</div>
+									<div class="card__info-block">
+										<div class="card__info-photo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff0099"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg></div>
+										<div class="card__info-text">
+											<h3 class="card__info-title">Стоимость</h3>
+											<p class="card__info-value">5 000 рублей</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="content__card">
+								<div class="content__card-description">
+									<div class="card__description-top">
+										<h2 class="card__description-title">Dashboard UI</h2>
+										
+										<div class="accordion__section">
+											
+											<button class="accordion__main"></button>
+											
+											<div class="accordion__text">
+												<ul>
+													<li>Скачать</li>
+													<li onclick="popup__open()">Заказать</li>
+												</ul>
+												
+											</div>
+										</div>
+										
+									</div>
+									<p class="card__description-text">Information Architecture for<br>Dashboard Project</p>
+								</div>
+								<div class="card__description-photo">
+									<div class="card__description-img"><img src="main/img/photo/jdial2-1.png" alt="photo"></div>
+									<div class="card__description-img"><img src="main/img/photo/jdial2.png" alt="photo"></div>
+								</div>
+								<div class="card__description-info">
+									<div class="card__info-block">
+										<div class="card__info-photo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff0099"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12.5 8H11v6l4.75 2.85.75-1.23-4-2.37zm4.837-6.19l4.607 3.845-1.28 1.535-4.61-3.843zm-10.674 0l1.282 1.536L3.337 7.19l-1.28-1.536zM12 4c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/></svg></div>
+										<div class="card__info-text">
+											<h3 class="card__info-title">Сроки</h3>
+											<p class="card__info-value">4 рабочих дня</h3>
+										</div>
+									</div>
+									<div class="card__info-block">
+										<div class="card__info-photo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff0099"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg></div>
+										<div class="card__info-text">
+											<h3 class="card__info-title">Стоимость</h3>
+											<p class="card__info-value">5 000 рублей</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</main>
+				
+			</div>
+			
+			<footer class="footer"></footer>
+			
+		</div>
+		
+		<script>
+			var acc = document.getElementsByClassName("accordion__btn");
+			var i;
+			for (i = 0; i < acc.length; i++){
+				acc[i].addEventListener("click", function(){
+					this.classList.toggle("active");
+					var accordion__menu = this.previousElementSibling;
+					if (accordion__menu.style.maxWidth){
+						accordion__menu.style.maxWidth = null;
+						}else {
+						accordion__menu.style.maxWidth = accordion__menu.scrollWidth + "px";
+					}
+				});
+			}
+		</script>
+		
+		<script>
+			var acc = document.getElementsByClassName("accordion__main");
+			var i;
+			for (i = 0; i < acc.length; i++){
+				acc[i].addEventListener("click", function(){
+					this.classList.toggle("active1");
+					var accordion__text = this.nextElementSibling;
+					if (accordion__text.style.maxHeight){
+						accordion__text.style.maxHeight = null;
+						}else {
+						accordion__text.style.maxHeight = accordion__text.scrollHeight + "px";
+					}
+				});
+			}
+		</script>
+		
+		<script type="text/javascript" src="main/js/script.js"></script>
+		
+	</body>
+</html>								
