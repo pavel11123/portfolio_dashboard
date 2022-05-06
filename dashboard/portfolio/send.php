@@ -5,9 +5,8 @@ $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
 $name = $_POST['user_name'];
-$phone = $_POST['user_phone'];
-$product = $_POST['user_product'];
 $email = $_POST['user_email'];
+$title = $_POST['user_title'];
 $text = $_POST['user_text'];
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
@@ -31,7 +30,7 @@ $mail->addAddress('korobko.11@inbox.ru');     // Кому будет уходи�
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заявка с тестового сайта';
-$mail->Body    = '' .$name . ' оставил заявку <br> Почта этого пользователя: ' .$email. ' Телефон этого пользователя: ' .$phone . ' Наименование товара: ' .$product . '<br> message: ' .$text ;
+$mail->Body    = '' .$name ' оставил заявку <br> Почта этого пользователя: ' .$email. ' Тема сообщения: ' .$title ' Сообщение: ' .$text;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
