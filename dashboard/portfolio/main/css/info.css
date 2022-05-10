@@ -1,90 +1,159 @@
-.info__grid{
+.info__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
 
-@media(min-width:818px) and (max-width:1137px){
-  .info__grid{
+@media(min-width:818px) and (max-width:1137px) {
+  .info__grid {
     grid-auto-flow: dense;
   }
 }
 
-.info__block{
+.info__block {
   background: #1a1a3c;
   overflow: hidden;
   padding: 35px 15px 15px 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: .3s;
-  flex-direction: column;
   position: relative;
   border-radius: 7px;
-  gap: 40px;
 }
 
-.info__block:hover{
+.info__graphics,
+.info__design,
+.info__adaptive{
+  display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    gap: 40px;
+}
+
+.info__block:not(:first-child):hover {
   background: var(--card-hover);
 }
 
-.info-title{color: var(--text-second);transition: .3s;position: absolute;left: 0;top: 0;padding: 10px 5px 5px 15px;}
+.info-title {
+  color: var(--text-second);
+  transition: .3s;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px 5px 5px 15px;
+}
 
-.info__map,
-.info__graphics{
+.info__services,
+.info__graphics {
   grid-column: span 2;
 }
 
-@media(max-width:817px){
-  .info__map,
-.info__graphics{
-  grid-column: span 1;
-}
+.info__services{
+  background: none;
+  padding: 0;
 }
 
-.info__design{}
+@media(max-width:817px) {
+  .info__services,
+  .info__graphics {
+    grid-column: span 1;
+  }
+}
 
-.info__adaptive{}
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  height: 100%;
+}
 
-.map__img,
+.services__block {
+  display: flex;
+  background: var(--card-back);
+  padding: 15px;
+  border-radius: 7px;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.services__big{
+  grid-column: span 2;
+  background: #1a1a3c;
+  padding-top: 15px;
+  border-radius: 7px;
+}
+
+@media(max-width:817px) {
+  .services__big{
+    grid-column: span 1;
+  }
+}
+
+.services__title{
+  color: var(--text-second);
+  padding-left: 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.services__text{color: var(--text-second);}
+
+.services__text h2{padding-bottom: 10px;font-size: 20px;}
+
+.services__text p{padding-top: 10px;font-size: 16px;}
+
+.services__img{
+  position: relative;
+  padding: 0px 0px 35% 35%;
+}
+
+.services__img svg{position: absolute;top: 0;left: 0;width: 100%;height: 100%;object-fit: contain;}
+
+.services__big-grid {display: grid;grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));gap: 15px;}
+
+.services__big-block{
+  display: flex;
+  padding: 15px 15px 15px 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services__big-text{}
+
+.services__big-text p{color: var(--text-second);font-size: 16px;line-height: 20px;}
+
+.info__design {}
+
+.info__adaptive {}
+
 .design__img,
 .graphics__img,
-.adaptive__img{
-    position: relative;
+.adaptive__img {
+  position: relative;
 }
 
-.map__img{
-  padding: 0px 0px 50% 90%;
-}
-
-.design__img{
-  /*! padding: 0px 0px 80% 80%; */
+.design__img {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.graphics__img{
+.graphics__img {
   padding: 0px 0px 50% 90%;
 }
 
-@media(max-width:500px){
-    .map__img{
-  padding: 0px 0px 60% 100%;
-}
-  .graphics__img{
-  padding: 0px 0px 60% 100%;
-}
+@media(max-width:500px) {
+  .graphics__img {
+    padding: 0px 0px 60% 100%;
+  }
 }
 
-.adaptive__img{
+.adaptive__img {
   padding: 0px 0px 60% 80%;
 }
 
-.map__img svg,
 .graphics__img svg,
-.adaptive__img svg{
+.adaptive__img svg {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -94,94 +163,126 @@
   overflow: visible;
 }
 
-#html,#bootstrap,#jquery,#scss,#react,#css,#js,#svg,#php:hover{
+#html,
+#bootstrap,
+#jquery,
+#scss,
+#react,
+#css,
+#js,
+#svg,
+#php:hover {
   fill: #ffffff;
   cursor: pointer;
 }
 
-#Rectangle398,#Rectangle399,#Rectangle400,#Rectangle401,#Rectangle402,#Rectangle403,#Rectangle404,#Rectangle405,
-#Rectangle406,#Rectangle409,#Rectangle410,#Rectangle411,#Rectangle412,#Rectangle413,#Rectangle414,#Rectangle415,
-#Rectangle416,#Rectangle417,#html,#jquery,#scss,#react,#css,#js,#svg,#bootstrap,#php{
+#Rectangle398,
+#Rectangle399,
+#Rectangle400,
+#Rectangle401,
+#Rectangle402,
+#Rectangle403,
+#Rectangle404,
+#Rectangle405,
+#Rectangle406,
+#Rectangle409,
+#Rectangle410,
+#Rectangle411,
+#Rectangle412,
+#Rectangle413,
+#Rectangle414,
+#Rectangle415,
+#Rectangle416,
+#Rectangle417,
+#html,
+#jquery,
+#scss,
+#react,
+#css,
+#js,
+#svg,
+#bootstrap,
+#php {
   transition: .3s;
 }
 
-#html:hover ~ #Rectangle398{
+#html:hover~#Rectangle398 {
   fill: #00e7d9;
 }
 
-#html:hover ~ #Rectangle409{
+#html:hover~#Rectangle409 {
   opacity: 0.2;
 }
 
-#html:hover ~ #Rectangle409{
+#html:hover~#Rectangle409 {
   opacity: 0.2;
 }
 
-#jquery:hover ~ #Rectangle399{
+#jquery:hover~#Rectangle399 {
   fill: #00e7d9;
 }
 
-#jquery:hover ~ #Rectangle410{
+#jquery:hover~#Rectangle410 {
   opacity: 0.2;
 }
 
-#scss:hover ~ #Rectangle400{
+#scss:hover~#Rectangle400 {
   fill: #00e7d9;
 }
 
-#scss:hover ~ #Rectangle411{
+#scss:hover~#Rectangle411 {
   opacity: 0.2;
 }
 
-#react:hover ~ #Rectangle401{
+#react:hover~#Rectangle401 {
   fill: #00e7d9;
 }
 
-#react:hover ~ #Rectangle412{
+#react:hover~#Rectangle412 {
   opacity: 0.2;
 }
 
-#css:hover ~ #Rectangle402{
+#css:hover~#Rectangle402 {
   fill: #00e7d9;
 }
 
-#css:hover ~ #Rectangle413{
+#css:hover~#Rectangle413 {
   opacity: 0.2;
 }
 
-#js:hover ~ #Rectangle403{
+#js:hover~#Rectangle403 {
   fill: #00e7d9;
 }
 
-#js:hover ~ #Rectangle414{
+#js:hover~#Rectangle414 {
   opacity: 0.2;
 }
 
-#svg:hover ~ #Rectangle404{
+#svg:hover~#Rectangle404 {
   fill: #00e7d9;
 }
 
-#svg:hover ~ #Rectangle415{
+#svg:hover~#Rectangle415 {
   opacity: 0.2;
 }
 
-#bootstrap:hover ~ #Rectangle405{
+#bootstrap:hover~#Rectangle405 {
   fill: #00e7d9;
 }
 
-#bootstrap:hover ~ #Rectangle416{
+#bootstrap:hover~#Rectangle416 {
   opacity: 0.2;
 }
 
-#php:hover ~ #Rectangle406{
+#php:hover~#Rectangle406 {
   fill: #00e7d9;
 }
 
-#php:hover ~ #Rectangle417{
+#php:hover~#Rectangle417 {
   opacity: 0.2;
 }
 
-.design__flex{
+.design__flex {
   display: flex;
   align-items: center;
   background: #141432;
@@ -192,40 +293,65 @@
   animation: opac 1s forwards;
 }
 
-.design__flex:nth-child(2){
+.design__flex:nth-child(2) {
   animation-delay: 0.4s;
 }
-.design__flex:nth-child(3){
+
+.design__flex:nth-child(3) {
   animation-delay: 0.8s;
 }
-.design__flex:nth-child(4){
+
+.design__flex:nth-child(4) {
   animation-delay: 1.2s;
 }
-.design__flex:nth-child(5){
+
+.design__flex:nth-child(5) {
   animation-delay: 1.6s;
 }
 
 @keyframes opac {
-	0% {opacity: 0}
-	100% {opacity: 100}
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 100
+  }
 }
 
 
-.design__browser{padding: 0px 0px 10% 10%;position: relative;}
+.design__browser {
+  padding: 0px 0px 10% 10%;
+  position: relative;
+}
 
-.design__browser img{width: 100%;height: 100%;object-fit: contain;position: absolute;top: 0;left: 0;}
+.design__browser img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
-.browser__title{color: var(--text-second);}
+.browser__title {
+  color: var(--text-second);
+}
 
-#Ellipse100,#Ellipse97,#Ellipse99{
+#Ellipse100,
+#Ellipse97,
+#Ellipse99 {
   transition: .3s;
 }
 
-.adaptive__block{display: flex;gap: 10px;}
+.adaptive__block {
+  display: flex;
+  gap: 10px;
+}
 
-.adaptive__block-subtitle{}
+.adaptive__block-subtitle {}
 
-.adaptive__square{
+.adaptive__square {
   color: var(--text-second);
   display: flex;
   align-items: center;
@@ -235,11 +361,11 @@
   transition: .3s;
 }
 
-.adaptive__square:hover{
+.adaptive__square:hover {
   color: var(--text-main);
 }
 
-.adaptive__square:before{
+.adaptive__square:before {
   content: " ";
   display: block;
   width: 12px;
@@ -249,12 +375,14 @@
   margin: 0px 5px 0px 0px;
 }
 
-.desctop:before{
+.desctop:before {
   background: #eb5757;
 }
-.mobile:before{
-    background: #2d74ff;
+
+.mobile:before {
+  background: #2d74ff;
 }
-.tab:before{
-    background: #00cabe;
+
+.tab:before {
+  background: #00cabe;
 }
