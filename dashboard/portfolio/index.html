@@ -6,9 +6,9 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="main/css/style.css?5">
-	<link rel="stylesheet" type="text/css" href="main/css/index.css?5">
-	<link rel="stylesheet" type="text/css" href="main/css/null.css?5">
+	<link rel="stylesheet" type="text/css" href="main/css/style.css?v=12">
+	<link rel="stylesheet" type="text/css" href="main/css/index.css?v=12">
+	<link rel="stylesheet" type="text/css" href="main/css/null.css?v=12">
 	<title>Title</title>
 </head>
 
@@ -44,9 +44,7 @@
 							<span></span>
 							<span></span>
 						</div>
-
 					</div>
-
 				</div>
 			</aside>
 
@@ -95,122 +93,99 @@
 				</div>
 
 				<header class="header">
-
 					<div class="header__flex">
 						<h2 class="header__title">My Portfolio</h2>
-
 						<a href="index.html">
 							<div class="header__society">
-
 								<h2 class="profile__name">Korobko Pavel</h2>
-
 								<div class="header__profile-photo">
 									<img src="main/img/photo/profile.jpeg" alt="logo">
 								</div>
-
 							</div>
 						</a>
-
 					</div>
 
 					<div class="header__bottom">
 						<h2 class="header__nav"><a href="index.html" class="nav__index nav__main">Главная</a></h2>
-
 						<div class="popup__main">
 							<button onclick="popup__open()" class="popup__btn">Заказать</button>
-
 							<div id="popup-id" class="popup">
 								<div class="popup__card">
-
 									<div onclick="popup__close()" class="popup__card-close"></div>
-
 									<div class="popup__content">
-										<form action="send.php" method="post" class="form__popup">
+										<form action="send_mail.php" name="form" method="POST" class="form__popup">
 											<div class="popup__grid">
-												<input type="text" name="user_name" placeholder="Имя"
-													class="popup__login popup__input">
-												<input type="email" name="user_email" placeholder="Email*"
+												<input type="text" name="name" id="name" data-reg="^[А-ЯЁ][а-яё]*$"
+													placeholder="Имя" class="popup__login popup__input">
+												<input type="email" name="email" id="email"
+													data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" placeholder="Email*"
 													class="popup__email popup__input" required="">
-												<input type="text" name="user_name" placeholder="Тема"
-													class="popup__subject popup__input">
-												<textarea name="user_text" placeholder="Сообщение*"
+												<input type="text" name="phone" id="phone" data-reg="^((\+7|7|8)+([0-9]){10})$"
+													placeholder="Номер телефона" class="popup__subject popup__input">
+												<textarea name="message" placeholder="Сообщение*"
 													class="popup__message popup__input" required=""></textarea>
-												<input type="submit" value="Отправить" class="popup__submit popup__input">
-
+												<input type="submit" id="button" value="Отправить"
+													class="popup__submit popup__input">
 											</div>
 										</form>
 									</div>
-
 								</div>
 							</div>
-
 						</div>
-
 					</div>
-
 				</header>
 
 				<div class="content">
-
 					<div class="index__grid">
-
 						<div class="index__grid-block grid__block-big">
 							<div class="block__big-main">
-
 								<div class="absolute__block block__css">
 									<img src="main/img/icon/css.svg" alt="css-skil">
 								</div>
-
 								<div class="absolute__block block__html">
 									<img src="main/img/icon/html.svg" alt="html-skil">
 								</div>
-
 								<div class="absolute__block block__js">
 									<img src="main/img/icon/js.svg" alt="js-skil">
 								</div>
-
 								<div class="absolute__block block__php">
 									<img src="main/img/icon/php.svg" alt="php-skil">
 								</div>
-
 								<div class="absolute__block block__seo">
 									<img src="main/img/icon/seo.svg" alt="seo-skil">
 								</div>
-
 								<div class="big__main-photo">
 									<img src="main/img/photo/mainphoto.png" alt="logo">
 								</div>
-
 								<div class="big__main-text">
 									<h3 class="main__text-title">Коробко Павел</h3>
 									<p class="main__text-description">Разработка сайтов / Вёрстка / Дизайн</p>
 								</div>
-
 								<div class="big__main-flex">
-									<div class="main__flex-block">
+									<a href="https://t.me/Pavelkorobko" class="main__flex-block">
 										<div class="flex__block-img">
 											<svg>
 												<use xlink:href="main/sprite/icon.svg#telegram"></use>
 											</svg>
 										</div>
 										<p class="flex__block-title">Я в Telegram</p>
-									</div>
-									<div class="main__flex-block">
+									</a>
+									<a href="https://www.instagram.com/korobko433" class="main__flex-block">
 										<div class="flex__block-img">
 											<svg>
 												<use xlink:href="main/sprite/icon.svg#instagram"></use>
 											</svg>
 										</div>
 										<p class="flex__block-title">Я в Instgram</p>
-									</div>
-									<div class="main__flex-block">
+									</a>
+									<a href="https://vk.com/korobkopavel" class="main__flex-block">
 										<div class="flex__block-img">
 											<svg>
 												<use xlink:href="main/sprite/icon.svg#vk"></use>
 											</svg>
 										</div>
 										<p class="flex__block-title">Я в VK</p>
-									</div>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -282,7 +257,9 @@
 			});
 		}
 	</script>
-	<script type="text/javascript" src="main/js/script.js?4"></script>
+	<script src="https://kit.fontawesome.com/fce9a50d02.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="main/js/script.js?v=12"></script>
+	<script src="main/js/app.js?v=12"></script>
 </body>
 
 </html>

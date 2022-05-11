@@ -6,9 +6,9 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="main/css/style.css?4">
-	<link rel="stylesheet" type="text/css" href="main/css/about.css?4">
-	<link rel="stylesheet" type="text/css" href="main/css/null.css?4">
+	<link rel="stylesheet" type="text/css" href="main/css/style.css?v=12">
+	<link rel="stylesheet" type="text/css" href="main/css/about.css?v=12">
+	<link rel="stylesheet" type="text/css" href="main/css/null.css?v=12">
 	<title>Title</title>
 </head>
 
@@ -16,13 +16,9 @@
 
 	<div class="wrapper">
 		<div class="grid__areas">
-
 			<aside class="sidebar">
 				<div class="sidebar__menu">
-
 					<div class="sidebar__menu-top">
-
-
 						<div class="accordion__menu">
 							<h2 class="sidebar__menu-title">Меню</h2>
 							<nav class="sidebar__list">
@@ -40,16 +36,12 @@
 								</ul>
 							</nav>
 						</div>
-
-
 						<div class="accordion__btn">
 							<span></span>
 							<span></span>
 							<span></span>
 						</div>
-
 					</div>
-
 				</div>
 			</aside>
 
@@ -98,108 +90,93 @@
 				</div>
 
 				<header class="header">
-
 					<div class="header__flex">
 						<h2 class="header__title">My Portfolio</h2>
-
 						<a href="index.html">
 							<div class="header__society">
-
 								<h2 class="profile__name">Korobko Pavel</h2>
-
 								<div class="header__profile-photo">
 									<img src="main/img/photo/profile.jpeg" alt="logo">
 								</div>
-
 							</div>
 						</a>
-
 					</div>
-
 					<div class="header__bottom">
 						<span class="header__nav"><a href="index.html" class="nav__index">Главная</a><a href="info.html"
 								class="nav__page">Инфо</a></span>
-
 						<div class="popup__main">
 							<button onclick="popup__open()" class="popup__btn">Заказать</button>
-
 							<div id="popup-id" class="popup">
 								<div class="popup__card">
-
 									<div onclick="popup__close()" class="popup__card-close"></div>
-
 									<div class="popup__content">
-										<form action="send.php" method="post" class="form__popup">
+										<form action="send_mail.php" name="form" method="POST" class="form__popup">
 											<div class="popup__grid">
-												<input type="text" name="user_name" placeholder="Имя"
-													class="popup__login popup__input">
-												<input type="email" name="user_email" placeholder="Email*"
+												<input type="text" name="name" id="name" data-reg="^[А-ЯЁ][а-яё]*$"
+													placeholder="Имя" class="popup__login popup__input">
+												<input type="email" name="email" id="email"
+													data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" placeholder="Email*"
 													class="popup__email popup__input" required="">
-												<input type="text" name="user_name" placeholder="Тема"
-													class="popup__subject popup__input">
-												<textarea name="user_text" placeholder="Сообщение*"
+												<input type="text" name="phone" id="phone" data-reg="^((\+7|7|8)+([0-9]){10})$"
+													placeholder="Номер телефона" class="popup__subject popup__input">
+												<textarea name="message" placeholder="Сообщение*"
 													class="popup__message popup__input" required=""></textarea>
-												<input type="submit" value="Отправить" class="popup__submit popup__input">
+												<input type="submit" id="button" value="Отправить"
+													class="popup__submit popup__input">
 											</div>
 										</form>
 									</div>
-
 								</div>
 							</div>
-
-
 						</div>
-
 					</div>
-
 				</header>
 
 				<div class="content">
 
 					<div class="about__grid">
-
 						<div class="about__grid-block">
-
 							<div class="arrow__main">
 								<span>DE<br>SI<br>GN<br>ER</span>
 							</div>
 							<div class="arrow__main">
 								<span>FR<br>ON<br>TE<br>ND</span>
 							</div>
-
 							<div class="about__grid-img about__man">
 								<img src="main/img/photo/about.png" alt="photo">
-
 							</div>
-
 						</div>
-
 						<div class="about__grid-block">
 							<h3 class="about__grid-title">Образование</h3>
 							<div class="about__block-text">
-								<p class="about__text">Омский Государственный Технический Университет. Факультет Информационных технологий и компьютерных систем "Информатика и вычислительная техника"</p>
-								<p class="about__text">Омский Государственный Технический Университет. Факультет Информационных технологий и компьютерных систем "Математические методы и программное обеспечение защиты информации"</p>
-								<p class="about__text">Разработка решений на платформе "1С: Предприятие 8 (с учетом стандарта Ворлдскиллс по компетенции "ИТ-решения для бизнеса на платформе "1С: Предприятие 8")"</p>
+								<p class="about__text">Омский Государственный Технический Университет. Факультет Информационных
+									технологий и компьютерных систем "Информатика и вычислительная техника"</p>
+								<p class="about__text">Омский Государственный Технический Университет. Факультет Информационных
+									технологий и компьютерных систем "Математические методы и программное обеспечение защиты
+									информации"</p>
+								<p class="about__text">Разработка решений на платформе "1С: Предприятие 8 (с учетом стандарта
+									Ворлдскиллс по компетенции "ИТ-решения для бизнеса на платформе "1С: Предприятие 8")"</p>
 							</div>
 						</div>
 
 						<div class="about__grid-block">
 							<h3 class="about__grid-title">Опыт</h3>
 							<div class="about__block-text">
-								<p class="about__text">Верстка более 20 реальных макетов landing Page, сайта визитки, интернет магазина и сайтов для малого бизнеса.</p>
-								<p class="about__text">Вёрстка реальных макетов с использованием современных технологий, для создания гибких и адаптивных проектов под любые разрешения экранов от мобильных устройств до персональнальных компьютеров с большим разрешением.</p>
-								<p class="about__text">Разработка более пяти уникальных сайтов с понятным интерфейсом для каждого пользователя.</p>
+								<p class="about__text">Верстка более 20 реальных макетов landing Page, сайта визитки, интернет
+									магазина и сайтов для малого бизнеса.</p>
+								<p class="about__text">Вёрстка реальных макетов с использованием современных технологий, для
+									создания гибких и адаптивных проектов под любые разрешения экранов от мобильных устройств до
+									персональнальных компьютеров с большим разрешением.</p>
+								<p class="about__text">Разработка более пяти уникальных сайтов с понятным интерфейсом для
+									каждого пользователя.</p>
 							</div>
 						</div>
 
 						<div class="about__grid-block grid__column-2">
-
 							<h3 class="about__grid-title">Местоположение</h3>
-
 							<div class="about__grid-img">
 								<img src="main/img/photo/map.svg" alt="map">
 							</div>
-
 						</div>
 
 						<div class="about__grid-block">
@@ -216,18 +193,12 @@
 								<p class="grid__block-text">Высокое качество<br>работы</p>
 							</div>
 						</div>
-
-
 					</div>
-
 				</div>
 
 			</main>
-
 		</div>
-
 		<footer class="footer"></footer>
-
 	</div>
 
 	<script>
@@ -245,8 +216,9 @@
 			});
 		}
 	</script>
-
-	<script type="text/javascript" src="main/js/script.js?4"></script>
+	<script src="https://kit.fontawesome.com/fce9a50d02.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="main/js/script.js?v=12"></script>
+	<script src="main/js/app.js?v=12"></script>
 
 </body>
 

@@ -73,6 +73,7 @@
   border-radius: 7px;
   gap: 10px;
   justify-content: space-between;
+  transition: .3s;
 }
 
 .services__big{
@@ -80,6 +81,11 @@
   background: #1a1a3c;
   padding-top: 15px;
   border-radius: 7px;
+  transition: .3s;
+}
+
+.services__block:hover, .services__big:hover{
+  background: var(--card-hover);
 }
 
 @media(max-width:817px) {

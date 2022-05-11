@@ -37,7 +37,7 @@
 
 .about__grid-block:not(:last-child):hover{
   background: var(--card-hover);
-  cursor: pointer;
+  cursor: auto;
 }
 
 .about__grid-block:first-child{

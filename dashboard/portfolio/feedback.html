@@ -6,9 +6,9 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="main/css/style.css?4">
-	<link rel="stylesheet" type="text/css" href="main/css/feedback.css?4">
-	<link rel="stylesheet" type="text/css" href="main/css/null.css?4">
+	<link rel="stylesheet" type="text/css" href="main/css/style.css?v=12">
+	<link rel="stylesheet" type="text/css" href="main/css/feedback.css?v=12">
+	<link rel="stylesheet" type="text/css" href="main/css/null.css?v=12">
 	<title>Title</title>
 </head>
 
@@ -16,13 +16,9 @@
 
 	<div class="wrapper">
 		<div class="grid__areas">
-
 			<aside class="sidebar">
 				<div class="sidebar__menu">
-
 					<div class="sidebar__menu-top">
-
-
 						<div class="accordion__menu">
 							<h2 class="sidebar__menu-title">Меню</h2>
 							<nav class="sidebar__list">
@@ -45,9 +41,7 @@
 							<span></span>
 							<span></span>
 						</div>
-
 					</div>
-
 				</div>
 			</aside>
 
@@ -96,60 +90,47 @@
 				</div>
 
 				<header class="header">
-
 					<div class="header__flex">
 						<h2 class="header__title">My Portfolio</h2>
-
 						<a href="index.html">
 							<div class="header__society">
-
 								<h2 class="profile__name">Korobko Pavel</h2>
-
 								<div class="header__profile-photo">
 									<img src="main/img/photo/profile.jpeg" alt="logo">
 								</div>
-
 							</div>
 						</a>
-
 					</div>
 
 					<div class="header__bottom">
 						<span class="header__nav"><a href="index.html" class="nav__index">Главная</a><a href="feedback.html"
 								class="nav__page">Заказать</a></span>
-
 						<div class="popup__main">
 							<button onclick="popup__open()" class="popup__btn">Заказать</button>
-
 							<div id="popup-id" class="popup">
 								<div class="popup__card">
-
 									<div onclick="popup__close()" class="popup__card-close"></div>
-
 									<div class="popup__content">
-										<form action="send.php" method="post" class="form__popup">
+										<form action="send_mail.php" name="form" method="POST" class="form__popup">
 											<div class="popup__grid">
-												<input type="text" name="user_name" placeholder="Имя"
-													class="popup__login popup__input">
-												<input type="email" name="user_email" placeholder="Email*"
+												<input type="text" name="name" id="name" data-reg="^[А-ЯЁ][а-яё]*$"
+													placeholder="Имя" class="popup__login popup__input">
+												<input type="email" name="email" id="email"
+													data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" placeholder="Email*"
 													class="popup__email popup__input" required="">
-												<input type="text" name="user_title" placeholder="Тема"
-													class="popup__subject popup__input">
-												<textarea name="user_text" placeholder="Сообщение*"
+												<input type="text" name="phone" id="phone" data-reg="^((\+7|7|8)+([0-9]){10})$"
+													placeholder="Номер телефона" class="popup__subject popup__input">
+												<textarea name="message" placeholder="Сообщение*"
 													class="popup__message popup__input" required=""></textarea>
-												<input type="submit" value="Отправить" class="popup__submit popup__input">
+												<input type="submit" id="button" value="Отправить"
+													class="popup__submit popup__input">
 											</div>
 										</form>
 									</div>
-
 								</div>
 							</div>
-
-
 						</div>
-
 					</div>
-
 				</header>
 
 				<div class="content">
@@ -160,19 +141,16 @@
 						</section>
 
 						<div class="feedback__grid-info">
-
 							<div class="feedback__contact-grid">
-
-								<div class="feedback__contact">
+								<a href="tel:+79507822966" class="feedback__contact">
 									<div class="feedback__society">
 										<svg>
 											<use xlink:href="main/sprite/icon.svg#phone"></use>
 										</svg>
 									</div>
 									<h3 class="feedback__society-title">Позвоните мне</h3>
-									<a href="tel:+79507822966" class="feedback__society-text">+7-950-782-29-66</a>
-								</div>
-
+									<p class="feedback__society-text">+7-950-782-29-66</p>
+								</a>
 								<div class="feedback__contact">
 									<div class="feedback__society">
 										<svg>
@@ -182,91 +160,76 @@
 									<h3 class="feedback__society-title">Офис</h3>
 									<p class="feedback__society-text">24 северная 161</p>
 								</div>
-
 							</div>
 
 							<div class="feedback__contact-grid">
-
-								<div class="feedback__contact">
+								<a href="mailto:korobko.11@inbox.ru" class="feedback__contact">
 									<div class="feedback__society">
 										<svg>
 											<use xlink:href="main/sprite/icon.svg#email"></use>
 										</svg>
 									</div>
 									<h3 class="feedback__society-title">Email</h3>
-									<a href="mailto:korobko.11@inbox.ru" class="feedback__society-text">korobko.11@inbox.ru</a>
-								</div>
-
-								<div class="feedback__contact">
+									<p class="feedback__society-text">korobko.11@inbox.ru</p>
+								</a>
+								<a href="https://korobko.site" class="feedback__contact">
 									<div class="feedback__society">
 										<svg>
 											<use xlink:href="main/sprite/icon.svg#site"></use>
 										</svg>
 									</div>
 									<h3 class="feedback__society-title">Website</h3>
-									<a href="https://korobko.site" class="feedback__society-text">korobko.site</a>
-								</div>
-
+									<p class="feedback__society-text">korobko.site</p>
+								</a>
 							</div>
 
-
 							<div class="feedback__contact-grid">
-
-								<div class="feedback__contact">
+								<a href="https://t.me/Pavelkorobko" class="feedback__contact">
 									<div class="feedback__society">
 										<svg>
 											<use xlink:href="main/sprite/icon.svg#telegram"></use>
 										</svg>
 									</div>
 									<h3 class="feedback__society-title">Telegram</h3>
-									<a href="https://t.me/Pavelkorobko" class="feedback__society-text">@Pavelkorobko</a>
-								</div>
-
-								<div class="feedback__contact">
+									<p class="feedback__society-text">@Pavelkorobko</p>
+								</a>
+								<a href="https://www.instagram.com/korobko433" class="feedback__contact">
 									<div class="feedback__society">
 										<svg>
 											<use xlink:href="main/sprite/icon.svg#instagram"></use>
 										</svg>
 									</div>
 									<h3 class="feedback__society-title">Instagram</h3>
-									<a href="https://t.me/Pavelkorobko" class="feedback__society-text">Перейти в Instagram</a>
-								</div>
-
+									<p class="feedback__society-text">korobko433</p>
+								</a>
 							</div>
 
 							<div class="feedback__contact-grid">
-
-								<div class="feedback__contact">
+								<a href="https://wa.me/79507822966?text=Здравствуйте!%20мне%20нужен%20сайт!"
+									class="feedback__contact">
 									<div class="feedback__society">
 										<svg>
 											<use xlink:href="main/sprite/icon.svg#wsa"></use>
 										</svg>
 									</div>
 									<h3 class="feedback__society-title">Whats App</h3>
-									<a href="https://wa.me/79507822966?text=Здравствуйте!%20мне%20нужен%20сайт!"
-										class="feedback__society-text">+7-950-782-29-66</a>
-								</div>
-
-								<div class="feedback__contact">
+									<p class="feedback__society-text">Коробко Павел</p>
+								</a>
+								<a href="https://vk.com/korobkopavel" class="feedback__contact">
 									<div class="feedback__society">
 										<svg>
 											<use xlink:href="main/sprite/icon.svg#vk"></use>
 										</svg>
 									</div>
 									<h3 class="feedback__society-title">VK</h3>
-									<p class="feedback__society-text">+7-983-520-03-46</p>
-								</div>
-
+									<p class="feedback__society-text">Коробко Павел</p>
+								</a>
 							</div>
-
-
 						</div>
 
 						<div class="feedback__form">
-
 							<h2 class="form__title">Свяжитесь со мной!</h2>
 							<p class="form__subtitle">Какой-то текст</p>
-
 
 							<form action="send_mail.php" name="form" method="POST" class="form__main">
 								<div class="form__grid">
@@ -282,20 +245,12 @@
 									<input type="submit" id="button" value="Отправить" class="feedback__submit form__input">
 								</div>
 							</form>
-
 						</div>
-
 					</div>
-
-
 				</div>
-
 			</main>
-
 		</div>
-
 		<footer class="footer"></footer>
-
 	</div>
 
 	<script>
@@ -315,9 +270,8 @@
 	</script>
 
 	<script src="https://kit.fontawesome.com/fce9a50d02.js" crossorigin="anonymous"></script>
-
-	<script type="text/javascript" src="main/js/script.js?4"></script>
-	<script src="main/js/app.js?4"></script>
+	<script type="text/javascript" src="main/js/script.js?v=12"></script>
+	<script src="main/js/app.js?v=12"></script>
 
 </body>
 
