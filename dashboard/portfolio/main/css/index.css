@@ -151,6 +151,7 @@
   padding: 0px 0px 10px 0px;
   font-size: 20px;
   color: var(--text-main);
+  font-family: var(--font-default);
 }
 
 .grid__block-big {
@@ -251,6 +252,7 @@
   color: var(--text-main);
   padding: 5px;
   font-size: 25px;
+  font-weight: var(--font-bold);
 }
 
 .main__text-description {
@@ -356,13 +358,14 @@
 
 .button__list {
   border-radius: 15px;
-  color: var(--text-main);
+  color: #ffffff;
   padding: 10px 15px 10px 10px;
   display: inline-flex;
   align-items: center;
   font-size: 16px;
   flex: 0 0 auto;
   align-self: start;
+  font-family: var(--font-default);
 }
 
 .button__list:after {

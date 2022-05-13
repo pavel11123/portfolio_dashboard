@@ -135,7 +135,7 @@
 .form__input {
   background: #141432;
   color: var(--text-second);
-  font-family: Roboto;
+  font-family: var(--font-default);
   padding: 15px;
   border-radius: 6px;
 }

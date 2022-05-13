@@ -34,7 +34,7 @@
 }
 
 .info-title {
-  color: var(--text-second);
+  color: var(--text-main);
   transition: .3s;
   position: absolute;
   left: 0;
@@ -95,17 +95,17 @@
 }
 
 .services__title{
-  color: var(--text-second);
+  color: var(--text-main);
   padding-left: 15px;
   font-size: 20px;
   text-transform: uppercase;
 }
 
-.services__text{color: var(--text-second);}
+.services__text{}
 
-.services__text h2{padding-bottom: 10px;font-size: 20px;}
+.services__text h2{padding-bottom: 10px;font-size: 20px;color: var(--text-main);}
 
-.services__text p{padding-top: 10px;font-size: 16px;}
+.services__text p{padding-top: 10px;font-size: 16px;color: var(--text-second);}
 
 .services__img{
   position: relative;

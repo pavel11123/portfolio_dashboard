@@ -3,7 +3,7 @@
 	--main-back: #141432;
 	--card-hover: #1D1D42;
 
-	--text-main: #fff;
+	--text-main: #e8eaed;
 	--text-second: #b8b8c3;
 
 	--green: #14c25a;
@@ -11,6 +11,10 @@
 	--blue: #2d74ff;
 	--red: #e73152;
 	--lblue: #00cabe;
+
+	--font-default: 'Vollkorn', serif;
+	--font-bold: 600;
+	--font-regular: 400;
 }
 
 .wrapper {
@@ -59,6 +63,7 @@
 .header__logo {
 	width: 60px;
 	height: 25px;
+	opacity: .8;
 }
 
 .header__logo img {
@@ -315,7 +320,7 @@
 .popup__input {
 	background: #141432;
 	color: var(--text-second);
-	font-family: Roboto;
+	font-family: var(--font-default);
 	padding: 15px;
 	border-radius: 6px;
 }
@@ -527,6 +532,7 @@
 	padding: 7px 0;
 	display: flex;
 	align-items: center;
+	font-family: "Times New Roman";
 }
 
 .sidebar__menu-a:before {

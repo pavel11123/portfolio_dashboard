@@ -43,6 +43,7 @@ button {
 }
 a {
 	color: inherit;
+	font-family: var(--font-default);
 }
 a:link,
 a:visited {
@@ -65,6 +66,11 @@ h5,
 h6 {
 	font-weight: inherit;
 	font-size: inherit;
+	font-family: var(--font-default);
+}
+p,
+li{
+	font-family: var(--font-default);
 }
 
 hr {
